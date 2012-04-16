@@ -135,7 +135,7 @@
                   
                   // Formate next game date as day of the week
                   var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-                  var nextGameDay = weekday[nextGameDate.getDay()];
+                  var nextGameDay = weekday[nextGameDate.getDay()-1];
                   $("#game .day").text("on " + nextGameDay);
                   $("#game .tstart").text(nextGame.time + " PT");
                   $("#game").show();
